@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ValuePassing3</string>
+    <string name="empty_text"> </string>
+    <string name="input_text">Type message in here</string>
+    <string name="submit_text">Send</string>
+    <string name="display_text">Display text</string>
 </resources>
