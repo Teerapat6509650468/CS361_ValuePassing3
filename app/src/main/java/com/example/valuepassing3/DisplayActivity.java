@@ -1,6 +1,7 @@
 package com.example.valuepassing3;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,9 @@ public class DisplayActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView txt = findViewById(R.id.display_text);
+        String extra = getIntent().getStringExtra("param");
+        txt.setText(extra);
     }
 }
